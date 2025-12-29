@@ -17,10 +17,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
 
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.button?.title = "🖥️"
+        
+        // Set icon from SF Symbols
+        if let button = statusItem?.button {
+            button.image = NSImage(systemSymbolName: "inset.filled.topleft.topright.bottomleft.bottomright.rectangle", accessibilityDescription: "Display Arranger")
+            button.image?.isTemplate = true // Adapts to light/darkmode
+        }
+        
         statusItem.menu = menuController.buildMenu()
 
-        // Observe screen changes
+        // Observer for screenchanges
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(screenConfigurationChanged),

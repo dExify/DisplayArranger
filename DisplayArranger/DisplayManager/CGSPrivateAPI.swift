@@ -8,13 +8,18 @@
 import Foundation
 import CoreGraphics
 
-// Returns system connection ID
-@_silgen_name("CGSDefaultConnection")
-func _CGSDefaultConnection() -> Int32
+@_silgen_name("CGSMainConnectionID")
+func CGSMainConnectionID() -> UInt32
 
-// Moves display origin
+@_silgen_name("CGSBeginDisplayConfiguration")
+func CGSBeginDisplayConfiguration(_ configRef: UnsafeMutablePointer<UInt32?>) -> Int32
+
 @_silgen_name("CGSConfigureDisplayOrigin")
-func CGSConfigureDisplayOrigin(_ cid: Int32,
-                               _ display: CGDirectDisplayID,
+func CGSConfigureDisplayOrigin(_ config: UInt32,
+                               _ display: UInt32,
                                _ x: Int32,
-                               _ y: Int32)
+                               _ y: Int32) -> Int32
+
+@_silgen_name("CGSCompleteDisplayConfiguration")
+func CGSCompleteDisplayConfiguration(_ config: UInt32,
+                                     _ option: Int32) -> Int32
