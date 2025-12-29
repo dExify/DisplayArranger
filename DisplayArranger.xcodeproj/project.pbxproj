@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		35C0EF162F032D6800EC833C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35C0EF152F032D6000EC833C /* README.md */; };
+		35C0EF182F032ECF00EC833C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 35C0EF172F032EC900EC833C /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		35FB8F952EE1BC2D00A8D92D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35C0EF152F032D6000EC833C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		35C0EF172F032EC900EC833C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		35FB8F862EE1BC2B00A8D92D /* DisplayArranger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplayArranger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FB8F942EE1BC2D00A8D92D /* DisplayArrangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplayArrangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FB8F9E2EE1BC2D00A8D92D /* DisplayArrangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplayArrangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +95,8 @@
 		35FB8F7D2EE1BC2B00A8D92D = {
 			isa = PBXGroup;
 			children = (
+				35C0EF172F032EC900EC833C /* .gitignore */,
+				35C0EF152F032D6000EC833C /* README.md */,
 				35FB8F882EE1BC2B00A8D92D /* DisplayArranger */,
 				35FB8F972EE1BC2D00A8D92D /* DisplayArrangerTests */,
 				35FB8FA12EE1BC2D00A8D92D /* DisplayArrangerUITests */,
@@ -225,6 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C0EF162F032D6800EC833C /* README.md in Resources */,
+				35C0EF182F032ECF00EC833C /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
